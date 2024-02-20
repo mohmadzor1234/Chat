@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #333;
+}
+.container .content {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+.container .content .header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+.container .content .header .img img {
+    width: 56px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container .content .header .title p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+.container .content .chat {
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(8, 44, 44);
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.container .content .chat .a {
+    width: 100%;
+    background-color: #367;
+    padding: 10px;
+    direction: ltr;
+}
+.container .content .chat .a p {
+    color: #fff;
+}
+.container .content .chat .b {
+    width: 100%;
+    background-color: rgb(27, 68, 82);
+    padding: 10px;
+    direction: rtl;
+}
+.container .content .chat .b p {
+    color: #fff;
+}
+
+
+
+
+
+
+
+.container .content .bottom {
+    width: 100%;
+    height: 5vh;
+
+}
+.container .content .bottom input[type="text"] {
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.container .content .bottom input[type="submit"] {
+    width: 9.5%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .container .content .bottom input[type="text"] {
+        width: 85%;
+        height: 100%;
+        outline: none;
+        border: none;
+        padding-left: 10px;
+    }
+    .container .content .bottom input[type="submit"] {
+        width: 13%;
+        height: 100%;
+        outline: none;
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
